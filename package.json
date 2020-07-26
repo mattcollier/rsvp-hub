@@ -25,6 +25,7 @@
     "bedrock-express": "^3.2.0",
     "bedrock-https-agent": "^1.1.0",
     "bedrock-server": "^2.6.0",
+    "busboy": "^0.3.1",
     "dotenv": "^8.2.0"
   }
 }
