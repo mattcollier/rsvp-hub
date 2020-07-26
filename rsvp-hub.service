@@ -1,0 +1,12 @@
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/root/.nvm/versions/node/v14.6.0/bin/node /rsvp-hub/dev.js
+WorkingDirectory=/rsvp-hub
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
