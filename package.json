@@ -1,0 +1,30 @@
+{
+  "name": "rsvp-hub",
+  "version": "0.0.1-0",
+  "description": "",
+  "scripts": {
+    "start": "node --preserve-symlinks dev.js",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattcollier/rsvp-hub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattcollier/rsvp-hub/issues"
+  },
+  "homepage": "https://github.com/mattcollier/rsvp-hub#readme",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-digitalbazaar": "^2.5.0"
+  },
+  "dependencies": {
+    "bedrock": "^3.1.1",
+    "bedrock-express": "^3.2.0",
+    "bedrock-https-agent": "^1.1.0",
+    "bedrock-server": "^2.6.0",
+    "dotenv": "^8.2.0"
+  }
+}
