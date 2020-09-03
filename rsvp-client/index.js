@@ -15,13 +15,18 @@ async function run() {
       agent
     });
   const summary = {};
-  summary.reportCount = reports.length;
+  // summary.reportCount = reports.length;
+  summary.reportCount = reports.filter(r => r.target === 'test-rocket').length;
   summary.totalAverageRequests = 0;
   summary.requestAverages = [];
   summary.latencyAverages = [];
   summary.totalNon2xx = 0;
   let totalLatency = 0;
   for(const report of reports) {
+    // console.log('PPPPP', JSON.stringify(report, null, 2));
+    if(report.target !== 'test-rocket') {
+      continue;
+    }
     // console.log('PPPPP', JSON.stringify(report, null, 2));
     const averageRequests = report.stats.requests.average;
     summary.requestAverages.push(averageRequests);
