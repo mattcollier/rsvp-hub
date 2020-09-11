@@ -16,7 +16,7 @@ async function run() {
     });
   const summary = {};
   // summary.reportCount = reports.length;
-  summary.reportCount = reports.filter(r => r.target === 'test-rocket').length;
+  summary.reportCount = reports.filter(r => r.target === 'test-falcon').length;
   summary.totalAverageRequests = 0;
   summary.requestAverages = [];
   summary.latencyAverages = [];
@@ -24,7 +24,7 @@ async function run() {
   let totalLatency = 0;
   for(const report of reports) {
     // console.log('PPPPP', JSON.stringify(report, null, 2));
-    if(report.target !== 'test-rocket') {
+    if(report.target !== 'test-falcon') {
       continue;
     }
     // console.log('PPPPP', JSON.stringify(report, null, 2));
